@@ -1,0 +1,90 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{js,jsx,ts,tsx}",
+    "./node_modules/react-tailwindcss-datetimepicker/dist/react-tailwindcss-datetimepicker.js",
+  ],
+  theme: {
+    extend: {
+      colors: {
+        "red-hci": "#E11931",
+        "surface-grey": "#F4F4F4",
+        "placeholder-grey": "#808080",
+        "blue-hci": "#79b1ff",
+        "back-nav-grey": "#676767",
+        "grey-default": "#eeeeee",
+        "grey-hover": "#f0f0f0",
+        "grey-text": "#808080",
+        "grey-checkbox": "#7b7b7b",
+        "grey-card": "#7D7D7D",
+        "blue-dark": "#2c2f3d",
+        "blue-sea": "#068dbc",
+        "blue-darkcnt": "#20222d",
+        "green-dark": "#333333",
+        "green-low": "#4d4d4d",
+        "gray-green": "#8e979b",
+        "gray-green-200": "#404554",
+        "blue-lg-600": "#1aa6f4",
+        "gray-d1": "#d1d1d1",
+        "gray-cd": "#efefef",
+        "grey-pagination": "#C0C0C0",
+        "grey-pagetitle": "#A9A9A9",
+        "dark-pagetitle": "#404040",
+        "grey-disabled": "#999999",
+        disabled: "#999999",
+        currentColor: "#E11931",
+      },
+      boxShadow: {
+        "hci-box": "0 0 0 2px #79b1ff",
+        "card-box": '1px 1px 3px 1px rgba(0, 0, 0, 0.1), 1px 1px 2px 1px rgba(0, 0, 0, 0.06)',
+        "hci-box-2": "0px 0px 0px 2px rgba(225,25,49,1)",
+      },
+      height: {
+        128: "32rem",
+        "8rem": "8rem",
+        "1/2-screen": "50vh",
+        "60vh": "60vh",
+        "70vh": "70vh",
+        "40vh": "40vh",
+        "50vh": "50vh",
+        "30vh": "30vh",
+      },
+      width: {
+        "1/2-screen": "50vw",
+        "45rem": "45rem",
+        "35rem": "35rem",
+        "20%": "20%",
+        "30%": "30%",
+        "50%": "50%",
+        "66%": "66%",
+        "30vw": "30vw",
+        "50vw": "50vw",
+      },
+      text: {
+        xxs: "0.5rem",
+      },
+      minHeight: {
+        40: "10rem",
+        8: "8rem",
+      },
+      maxHeight: {
+        "11rem": "11rem",
+        "70vh": "70vh",
+        "60vh": "60vh",
+      },
+      outline: {
+        olRed: '10px solid #E11931',
+      },
+      backgroundImage: (theme) => ({
+        "header-daisy": "url('/src/images/daisy/Header.png')",
+        "telescope-girl": "url('/src/images/daisy/telescope_girl.png')",
+        "icon-search": "url('/src/images/daisy/icon-search.png')",
+      }),
+      screens: {
+        dark: { raw: "(prefers-color-scheme: black)" },
+        // => @media (prefers-color-scheme: dark) { ... }
+      },
+    },
+  },
+  plugins: [],
+};
